@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Html Css JavaScript Portfolio KaikSelhorst">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kaik Selhorst">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <!-- Font Family : VT323-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/reset.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="conteiner">
+    <!-- HEADER -->
+    <header id="header">
+      <button class="btn-theme" aria-label="Switch Theme to White">
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M13 3h-2v2h2V3zm4 2h2v2h-2V5zm-6 6h2v2h-2v-2zm-8 0h2v2H3v-2zm18 0h-2v2h2v-2zM5 5h2v2H5V5zm14 14h-2v-2h2v2zm-8 2h2v-2h-2v2zm-4-2H5v-2h2v2zM9 7h6v2H9V7zm0 8H7V9h2v6zm0 0v2h6v-2h2V9h-2v6H9z"
+            fill="currentColor" />
+        </svg>
+      </button>
+      <nav class="navigation">
+        <button class="btn-mobile" aria-label="Open Menu" aria-controls="Menu" aria-haspopup="true"
+          aria-expanded="false">
+          <span></span>
+        </button>
+        <ul id="Menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span>B7</span>
+      </nav>
+    </header>
+    <!-- END-HEADER -->
+    <!-- MAIN -->
+    <main class="content">
+      <!-- INTRODUCTION -->
+      <section class="introduction">
+        <div class="introduction_text">
+          <p>Hi, my name is</p>
+          <h1>Kaik Selhorst</h1>
+          <p>I build things for the web.</p>
+
+          <div class="introduction_scroll">
+            <img src="./assets/mouse.svg" alt="Mouse Icon">
+            <p>Scroll</p>
+          </div>
+        </div>
+        <div class="introduction_img">
+          <img src="./assets/ghost.svg" alt="Ghost In PixelArt ">
+        </div>
+      </section>
+      <!-- END - INTRODUCTION -->
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="about_text">
+          <h2 class="section_title">About Me</h2>
+          <p>Hi, my name is Kaik aka Bseven in the discord communities and I like to create things that live on the
+            internet. My interest in web development started in 2021 when my uncle introduced me to a Php and Python
+            course.</p>
+          <p>Fast forward to today, I had the privilege of knowing the Ballerini Community, where I met several people
+            in special one that was Alpha he helped me a lot with JavaScript, so that today I have a base of React, Vue
+            and Svelte </p>
+          <p>Here are some technologies that I have been studying recently:</p>
+          <ul>
+            <li>
+              <img src="./assets/triangle.svg" alt="triangle indicator">
+              JavaScript (ES6+)
+            </li>
+            <li>
+              <img src="./assets/triangle.svg" alt="triangle indicator">
+              React
+            </li>
+            <li>
+              <img src="./assets/triangle.svg" alt="triangle indicator">
+              TypeScript
+            </li>
+            <li>
+              <img src="./assets/triangle.svg" alt="triangle indicator">
+              NodeJs
+            </li>
+            <li>
+              <img src="./assets/triangle.svg" alt="triangle indicator">
+              SvelteJs
+            </li>
+          </ul>
+        </div>
+        <div class="about_img">
+          <img src="./assets/book.svg" alt="Book PixelArt">
+        </div>
+      </section>
+      <!-- END-ABOUT -->
+      <!-- PROJECTS -->
+      <section id="work">
+        <h2 class="section_title">Some Things I&#8217;ve Built</h2>
+        <div class="work_item">
+          <div class="work_item_text">
+            <span>Featured Project</span>
+            <h3>ARCH GUI</h3>
+            <p>Restructuring the Official <a href="" target="_blank">Arch Linux Gui</a> Site, Using Only Basic Languages
+              (Html and Css)
+            </p>
+            <div class="work_item_language">
+              <ul>
+                <li>Html</li>
+                <li>Figma</li>
+                <li>Css</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </div>
+            <div class="work_item_links">
+              <a href="" target="_blank"><i data-feather="github"></i></a>
+              <a href="" target="_blank"><i data-feather="external-link"></i></a>
+            </div>
+          </div>
+          <div class="work_item_image">
+            <img src="./assets/archgui.svg" alt="My Arch Gui Projects Logo">
+          </div>
+        </div>
+        <!-- ITEM 2 -->
+        <div class="work_item">
+          <div class="work_item_text">
+            <span>Featured Project</span>
+            <h3>PORTFOLIO</h3>
+            <p>My Old Portfolio made based on the <a href="" target="_blank">Nord Theme</a>, using external
+              implementations
+            </p>
+            <div class="work_item_language">
+              <ul>
+                <li>Html</li>
+                <li>Figma</li>
+                <li>Css</li>
+                <li>Vercel</li>
+                <li>JavaScript(ES6+)</li>
+              </ul>
+            </div>
+            <div class="work_item_links">
+              <a href="" target="_blank"><i data-feather="github"></i></a>
+              <a href="" target="_blank"><i data-feather="external-link"></i></a>
+            </div>
+          </div>
+          <div class="work_item_image">
+            <img src="./assets/portfolio.svg" alt="My Old Portfolio Logo">
+          </div>
+        </div>
+      </section>
+      <section id="other_work">
+        <h2>Other Noteworthy Projects</h2>
+        <ul>
+          <li>
+            <div class="other_work_top">
+              <img src="./assets/folder.svg" alt="Folder PixelArt">
+              <div class="other_work_link">
+                <a href="" target="_blank"><i data-feather="github"></i></a>
+                <a href="" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
+            <h3>House-Developer</h3>
+            <p>Example of an Architecture Company Website </p>
+            <div class="other_work_language">
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="other_work_top">
+              <img src="./assets/folder.svg" alt="Folder PixelArt">
+              <div class="other_work_link">
+                <a href="" target="_blank"><i data-feather="github"></i></a>
+                <a href="" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
+            <h3>SearchBot</h3>
+            <p>Created To Host SearchBot, a Bot for discord</p>
+            <div class="other_work_language">
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Figma</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="other_work_top">
+              <img src="./assets/folder.svg" alt="Folder PixelArt">
+              <div class="other_work_link">
+                <a href="" target="_blank"><i data-feather="github"></i></a>
+                <a href="" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
+            <h3>WebDeveloperTools</h3>
+            <p>Guide to Web Developer Tools.</p>
+            <div class="other_work_language">
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Figma</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="other_work_top">
+              <img src="./assets/folder.svg" alt="Folder PixelArt">
+              <div class="other_work_link">
+                <a href="" target="_blank"><i data-feather="github"></i></a>
+                <a href="" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
+            <h3>LoginPage</h3>
+            <p>Login page, DailyUI challenge</p>
+            <div class="other_work_language">
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- END-PROJECTS -->
+      <!-- CONTACT -->
+      <section id="contact">
+        <span>What&#8217;s Next?</span>
+        <h2>Get In Touch</h2>
+        <p>My inbox is always open. If you have a question or just want to say hi, I will try my best to answer you!</p>
+        <a href="mailto:contato.kaikselhorst@gmail.com">Say Hello</a>
+      </section>
+      <!-- END-CONTACT -->
+    </main>
+    <!-- END-MAIN -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>Designed & Built by Kaik Selhorst</span>
+      <div class="github_status">
+        <span id="git_stars">
+        </span>
+        <span id="git_fork">
+          <i data-feather="git-branch"></i>
+        </span>
+      </div>
+    </footer>
+    <!-- END-FOOTER -->
+  </div>
+  <!-- Pop-up -->
+  <div id="popup">
+    <p>Maybe in a while I will have a clear theme, I am afraid more bugs will appear</p>
+    <span></span>
+  </div>
+  <!-- Module JavaScript -->
+  <script src="./script/index.js" type="module"></script>
+  <!-- Feather-Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
