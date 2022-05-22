@@ -21,15 +21,16 @@ export class SmoothScroll {
 
 export class activeSmoothScrollEfect{
   constructor(elementIndicatorSection,section){
-    this.section = document.querySelectorAll(section)
     this.elementIndicatorSection = document.querySelectorAll(elementIndicatorSection)
+    this.section = document.querySelectorAll(section)
+    this.sectionIndicator = document.querySelector('.section_indicator')
     this.handleScroll = this.handleScroll.bind(this)
     this.activeNavScroll()
     this.handleScroll()
   }
   handleScroll(){
-    this.section.forEach((section,i) => {
-      if(window.pageYOffset > section.offsetTop - window.innerHeight * 0.5){
+    this.section.forEach((itemSection,i) => {
+      if(window.pageYOffset > itemSection.offsetTop - window.innerHeight * 0.5){
         this.elementIndicatorSection[i].classList.add('active')
       }else{
         this.elementIndicatorSection[i].classList.remove('active')
