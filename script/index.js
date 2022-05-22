@@ -6,6 +6,6 @@ import {SmoothScroll,activeSmoothScrollEfect} from "./SmoothScroll.js"
 
 new SwitchTheme('.btn-theme','#popup')
 new MenuMobile(".btn-mobile",'.navigation')
-new GitStatus('#git_stars',"#git_fork")
+new GitStatus('#git_stars',"#git_fork",'KaikSelhorstPixel')
 new SmoothScroll('a[href^="#"]')
 new activeSmoothScrollEfect('.section_indicator > span','.content > section')

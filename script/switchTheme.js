@@ -16,6 +16,7 @@ export class SwitchTheme {
     document.body.classList.toggle('white')
     this.popup.classList.toggle('enable')
     setTimeout(this.addClassInBodyAndLocalStorage,6300)
+    // Adds the Selected Theme to Local Storage
     // window.localStorage.setItem('Theme',document.body.classList.contains('white'))
   }
   defaultTheme(){
