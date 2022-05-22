@@ -16,11 +16,11 @@
 
 ## Fork This repo (please read!)
 
-Before continuing reading this README, please understand that this portfolio has a great influence on [Brittany Chiang](brittanychiang.com)'s portfolio
+Before continuing reading this README, please understand that this portfolio has a great influence on [Brittany Chiang](https://brittanychiang.com/)'s portfolio
 
 ## Continuing
 
-Yes, you can fork this repository. Please thank you for reading this and also than [brittanychiang.com](). Thanks!
+Yes, you can fork this repository. Please thank you for reading this and also than [brittanychiang.com](https://brittanychiang.com/). Thanks!
 
 <br>
 <br>
