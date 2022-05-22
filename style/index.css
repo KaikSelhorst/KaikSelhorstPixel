@@ -640,7 +640,7 @@ body.blur .content
   margin: 25px auto 50px auto;
   color: var(--white50);
 }
-#contact a
+#contact > a
 {
   border: 1px solid var(--purple);
   display: inline-block;
@@ -652,9 +652,75 @@ body.blur .content
   font-size: 1.25rem;
   transition: var(--timefast);
 }
-#contact a:hover
+#contact > a:hover
 {
   background: var(--purple10);
+}
+
+.social_media
+{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social_media svg
+{
+  max-width: 20px;
+  color: var(--white70);
+  transition: var(--timefast);
+}
+.social_media a:hover svg
+{
+  color: var(--purple);
+}
+@media(min-width:1200px){
+  .section_indicator
+  {
+    display: flex;
+    left: 40px;
+    bottom: 50%;
+    gap: 15px;
+    position: fixed;
+    flex-direction: column;
+  }
+  .section_indicator span
+  {
+    display: block;
+    content: "";
+    transition: var(--timefast);
+    height: 12px;
+    width: 12px;
+    background: var(--purple10);
+  }
+  .section_indicator span.active
+  {
+    background: var(--purple);
+  }
+  .social_media
+  {
+    position: absolute;
+    bottom: 120px;
+    left: 35px;
+    flex-direction: column;
+    position: fixed;
+  }
+  .social_media::after
+  {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: -330%;
+    transform: rotate(90deg);
+    background: var(--white70);
+    width: 150px;
+    top: 140px;
+  }
+}
+@media(max-width:1200px){
+  .social_media
+  {
+    margin-top: 100px;
+  }
 }
 /* END-CONTACT */
 /* END-CONTACT */
@@ -667,7 +733,7 @@ body.blur .content
 
 .footer
 {
-  margin: 300px 0 40px 0;
+  margin: 200px 0 40px 0;
   display: flex;
   font-size: 1.125rem;
   align-items: center;
@@ -753,7 +819,7 @@ body.blur .content
 }
 #popup.enable span::after
 {
-  animation-delay: 300ms;
+  animation-delay: var(--timefast);
   animation: AnimPopup 6s linear forwards;
 }
 @keyframes AnimPopup {

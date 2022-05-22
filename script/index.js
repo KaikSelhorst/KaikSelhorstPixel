@@ -1,8 +1,11 @@
 import {SwitchTheme} from "./switchTheme.js"
 import {MenuMobile} from "./menuMobile.js"
-import {gitStatus} from "./footergit.js"
+import {GitStatus} from "./footergit.js"
+import {SmoothScroll,activeSmoothScrollEfect} from "./SmoothScroll.js"
 
 
 new SwitchTheme('.btn-theme','#popup')
 new MenuMobile(".btn-mobile",'.navigation')
-new gitStatus('#git_stars',"#git_fork")
+new GitStatus('#git_stars',"#git_fork")
+new SmoothScroll('a[href^="#"]')
+new activeSmoothScrollEfect('.section_indicator > span','.content > section')
