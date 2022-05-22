@@ -313,6 +313,11 @@ body.blur .content
 {
   margin: 25px 0 020px;
 }
+.about_text p > a
+{
+  color: var(--purple);
+  text-decoration: none;
+}
 .about_text ul
 {
   display: grid;  
