@@ -5,7 +5,7 @@
   kaik selhorst - portfolio
 </h1>
 <p align='center'>
-  My <a href='https://kaik-selhorst-pixel.vercel.app/'>portfolio</a> developed in Html, CSS, VanillaJs and Hosted at <a href='https://vercel.com/'>Vercel</a>
+  My <a href='https://kaikselhorst.vercel.app/'>portfolio</a> developed in Html, CSS, VanillaJs and Hosted at <a href='https://vercel.com/'>Vercel</a>
 </p>
 
 <p align='center'>
