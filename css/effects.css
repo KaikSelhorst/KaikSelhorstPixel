@@ -1,0 +1,5 @@
+:root {
+  --timefast: 300ms;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadow95Blue: 0px 2px 2px hsla(212, 97%, 14%, 0.95);
+}

@@ -1,0 +1,15 @@
+/* Reset */
+@import "./reset.css";
+@import "./global.css";
+/* Styles */
+@import "./header.css";
+@import "./introduction.css";
+@import "./about.css";
+@import "./work.css";
+@import "./other-work.css";
+@import "./contact.css";
+@import "./footer.css";
+
+@import "./colors.css";
+@import "./effects.css";
+@import "./components/popup.css";

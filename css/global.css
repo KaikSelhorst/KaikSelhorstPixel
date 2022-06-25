@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(243.03deg, #09192b 0.89%, #012146 101.1%);
+}
+
+body.blur .content {
+  filter: blur(18px) brightness(0.7);
+}
+.conteiner {
+  max-width: 1100px;
+  padding: 0 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}

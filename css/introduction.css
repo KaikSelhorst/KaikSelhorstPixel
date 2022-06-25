@@ -1,0 +1,47 @@
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 110px;
+  background-repeat: no-repeat;
+  background-position: left 25% top -10px;
+  background-image: url("../assets/heart.svg");
+}
+
+.introduction_text > p {
+  font-size: 1.875rem;
+  color: var(--white50);
+}
+.introduction_text > p:nth-of-type(2) {
+  display: inline;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url("../assets/details.svg");
+}
+.introduction_text h1 {
+  font-size: 4.375rem;
+  color: var(--white);
+}
+.introduction_scroll {
+  display: flex;
+  margin-top: 55px;
+  align-items: center;
+  color: var(--purple);
+  gap: 2px;
+}
+.introduction_scroll p {
+  letter-spacing: 1px;
+}
+.introduction_img {
+  max-width: 256px;
+}
+
+@media (max-width: 650px) {
+  .introduction {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .introduction_img {
+    order: -1;
+  }
+}
