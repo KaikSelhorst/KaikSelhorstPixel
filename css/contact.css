@@ -61,7 +61,7 @@
     position: fixed;
     flex-direction: column;
   }
-  .section_indicator span {
+  .section_indicator a {
     display: block;
     content: "";
     transition: var(--timefast);
@@ -69,7 +69,7 @@
     width: 12px;
     background: var(--purple10);
   }
-  .section_indicator span.active {
+  .section_indicator a.activeSection {
     background: var(--purple);
   }
   .social_media {
