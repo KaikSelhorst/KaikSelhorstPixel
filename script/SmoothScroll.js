@@ -25,7 +25,7 @@ export class activeSmoothScrollEfect {
     this.handleScroll = this.handleScroll.bind(this);
     this.activeNavScroll();
     this.addIndicator();
-    this.eventaddInItemsIndicator();
+    this.eventAddInItemsIndicator();
     this.handleScroll();
   }
   activeNavScroll() {
@@ -39,7 +39,6 @@ export class activeSmoothScrollEfect {
   }
   eventAddInItemsIndicator() {
     let indicatorItems = document.querySelectorAll(".section_indicator a");
-    console.log(indicatorItems);
     indicatorItems.forEach((element) => {
       element.addEventListener("click", (event) => {
         event.preventDefault();
