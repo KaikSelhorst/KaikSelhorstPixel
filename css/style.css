@@ -10,6 +10,8 @@
 @import "./contact.css";
 @import "./footer.css";
 
-@import "./colors.css";
 @import "./effects.css";
 @import "./components/popup.css";
+
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";

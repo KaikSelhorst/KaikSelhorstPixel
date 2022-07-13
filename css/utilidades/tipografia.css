@@ -1,0 +1,56 @@
+.font-xxl {
+  font: 600 4.375rem "VT323", monospace;
+}
+.font-xl {
+  font: 3.75rem/1 "VT323", monospace;
+  letter-spacing: 2px;
+}
+.font-l,
+.font-l-2 {
+  font: 600 2rem/1 "VT323", monospace;
+  letter-spacing: 1px;
+}
+.font-l-2 {
+  font-weight: 400;
+}
+.font-m {
+  font: 1.875rem/1 "VT323", monospace;
+}
+.font-s {
+  font: 1.75rem/1 "VT323", monospace;
+  letter-spacing: 1px;
+}
+.font-s-1 {
+  font: 400 1.625rem/1 "VT323", monospace;
+  letter-spacing: 0.8px;
+}
+.font-s-2 {
+  font: 1.5rem/1.2 400 "VT323", monospace;
+}
+.font-s-2-n,
+.font-s-2-n-2 {
+  font: 400 1.5rem/1.09 "VT323", monospace;
+  letter-spacing: -1px;
+}
+.font-s-2-n-2 {
+  line-height: 1.25;
+}
+.font-s-3 {
+  font: 400 1.25rem/1.2 "VT323", monospace;
+}
+.font-xs {
+  font: 400 1.25rem/1.25 "VT323", monospace;
+}
+.font-xs-1 {
+  font: 400 1.25rem/1 "VT323", monospace;
+}
+.font-xs-2,
+.font-xs-3 {
+  font: 400 1.125rem/1 "VT323", monospace;
+}
+.font-xs-3 {
+  letter-spacing: 0.8px;
+}
+.font-xs-4 {
+  font: 400 1rem/1 "VT323", monospace;
+}

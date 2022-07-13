@@ -9,7 +9,6 @@
 }
 
 .introduction_text > p {
-  font-size: 1.875rem;
   color: var(--white50);
 }
 .introduction_text > p:nth-of-type(2) {
@@ -19,7 +18,6 @@
   background-image: url("../assets/details.svg");
 }
 .introduction_text h1 {
-  font-size: 4.375rem;
   color: var(--white);
 }
 .introduction_scroll {

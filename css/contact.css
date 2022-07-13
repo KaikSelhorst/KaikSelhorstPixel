@@ -4,23 +4,12 @@
 }
 #contact span {
   color: var(--purple);
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 400;
 }
 #contact h2 {
-  font-size: 3.75rem;
-  line-height: 3.75rem;
   color: var(--white);
-  font-weight: 400;
-  letter-spacing: 2px;
 }
 #contact p {
-  line-height: 1.625rem;
-  letter-spacing: -1px;
-  font-size: 1.5rem;
   max-width: 515px;
-  font-weight: 400;
   margin: 25px auto 50px auto;
   color: var(--white50);
 }

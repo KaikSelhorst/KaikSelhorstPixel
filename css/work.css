@@ -26,16 +26,10 @@
   text-align: right;
 }
 .work_item_text span {
-  font-size: 1.125rem;
-  font-weight: 400;
   color: var(--purple);
-  line-height: 1.125rem;
 }
 .work_item_text h3 {
   color: var(--white);
-  font-size: 2rem;
-  line-height: 2rem;
-  letter-spacing: 1px;
   margin: 2px 0 25px 0;
 }
 .work_item_text p {
@@ -43,10 +37,7 @@
   box-shadow: var(--shadow95Blue);
   text-align: left;
   padding: 35px;
-  font-weight: 400;
   color: var(--white50);
-  font-size: 1.25rem;
-  line-height: 1.25rem;
 }
 .work_item_text a {
   text-decoration: none;
@@ -61,10 +52,7 @@
   gap: 25px;
 }
 .work_item_language li {
-  font-size: 1.125rem;
-  line-height: 1.125rem;
   color: var(--white50);
-  font-weight: 400;
 }
 .work_item_links {
   display: flex;

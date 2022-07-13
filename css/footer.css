@@ -1,11 +1,9 @@
 .footer {
   margin: 200px 0 40px 0;
   display: flex;
-  font-size: 1.125rem;
   align-items: center;
   flex-direction: column;
   color: var(--white50);
-  letter-spacing: 0.8px;
 }
 .github_status {
   margin: 15px 0 0 0;

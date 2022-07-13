@@ -2,9 +2,6 @@
   margin-top: 190px;
 }
 #other_work h2 {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 400;
   color: var(--white);
   text-align: center;
 }
@@ -40,14 +37,9 @@
 }
 #other_work > ul > li h3 {
   margin: 35px 0 10px 0;
-  font-size: 1.625rem;
-  line-height: 1.625rem;
   color: var(--white);
-  letter-spacing: 1px;
 }
 #other_work > ul > li p {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   color: var(--white50);
 }
 .other_work_language ul {
