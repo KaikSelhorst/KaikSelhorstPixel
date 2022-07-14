@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+  .section_indicator {
+    display: grid;
+    left: 40px;
+    bottom: 50%;
+    gap: 15px;
+    position: fixed;
+  }
+  .section_indicator a {
+    display: block;
+    content: "";
+    transition: var(--timefast);
+    height: 12px;
+    width: 12px;
+    background: var(--purple10);
+  }
+  .section_indicator a.activeSection {
+    background: var(--purple);
+  }
+}

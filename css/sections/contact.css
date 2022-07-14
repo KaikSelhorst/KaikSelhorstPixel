@@ -1,0 +1,44 @@
+#contact {
+  margin-top: 300px;
+  text-align: center;
+}
+
+#contact p {
+  max-width: 515px;
+  margin: 25px auto 50px auto;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social_media svg {
+  max-width: 20px;
+  transition: var(--timefast);
+}
+
+@media (min-width: 1200px) {
+  .social_media {
+    position: absolute;
+    bottom: 120px;
+    left: 35px;
+    flex-direction: column;
+    position: fixed;
+  }
+  .social_media::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: -330%;
+    transform: rotate(90deg);
+    background: var(--white70);
+    width: 150px;
+    top: 140px;
+  }
+}
+@media (max-width: 1200px) {
+  .social_media {
+    margin-top: 100px;
+  }
+}

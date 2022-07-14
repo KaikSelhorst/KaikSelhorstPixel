@@ -10,16 +10,3 @@ img {
   max-width: 100%;
   display: block;
 }
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-body::-webkit-scrollbar-track {
-  background: hsla(212, 97%, 14%, 0.95);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
-  border-radius: 20px;
-  border: 2px solid hsla(212, 97%, 14%, 0.95);
-}

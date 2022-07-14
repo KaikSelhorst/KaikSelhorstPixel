@@ -8,11 +8,7 @@
 }
 
 .section_title {
-  font-size: 2rem;
-  line-height: 2rem;
   margin-left: 18px;
-  color: var(--white);
-  letter-spacing: 1px;
   display: block;
   position: relative;
 }
@@ -37,9 +33,7 @@
   top: 55%;
   left: calc(112px + 8px + 5px);
 }
-.about_text p {
-  color: var(--white50);
-}
+
 .about_text p:nth-of-type(1) {
   margin: 47px 0 10px 0;
 }
@@ -47,7 +41,6 @@
   margin: 25px 0 020px;
 }
 .about_text p > a {
-  color: var(--purple);
   text-decoration: none;
 }
 .about_text ul {
@@ -60,7 +53,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--white50);
 }
 .about_img {
   margin-top: 50px;

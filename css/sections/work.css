@@ -25,11 +25,8 @@
   grid-column: 6 / -1;
   text-align: right;
 }
-.work_item_text span {
-  color: var(--purple);
-}
+
 .work_item_text h3 {
-  color: var(--white);
   margin: 2px 0 25px 0;
 }
 .work_item_text p {
@@ -37,11 +34,9 @@
   box-shadow: var(--shadow95Blue);
   text-align: left;
   padding: 35px;
-  color: var(--white50);
 }
 .work_item_text a {
   text-decoration: none;
-  color: var(--purple);
 }
 .work_item_language {
   margin: 25px 0;
@@ -51,9 +46,6 @@
   justify-content: right;
   gap: 25px;
 }
-.work_item_language li {
-  color: var(--white50);
-}
 .work_item_links {
   display: flex;
   gap: 20px;
@@ -62,10 +54,6 @@
 .work_item_links a {
   display: block;
   transition: var(--timefast);
-  color: var(--white);
-}
-.work_item_links a:hover {
-  color: var(--purple);
 }
 .work_item_links svg {
   width: 20px;

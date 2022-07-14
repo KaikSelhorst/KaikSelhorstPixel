@@ -6,3 +6,25 @@
   --blue80: hsl(212, 97%, 14%, 0.8);
   --purple10: hsl(254, 63%, 60%, 0.1);
 }
+
+.cor-0 {
+  color: var(--white);
+}
+.cor-1 {
+  color: var(--white50);
+}
+.cor-2 {
+  color: var(--white70);
+}
+.cor-3 {
+  color: var(--blue80);
+}
+.cor-p1 {
+  color: var(--purple);
+}
+.cor-p1-hover:hover {
+  color: var(--purple);
+}
+.cor-p2 {
+  color: var(--purple10);
+}

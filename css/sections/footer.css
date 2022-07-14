@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: var(--white50);
 }
 .github_status {
   margin: 15px 0 0 0;

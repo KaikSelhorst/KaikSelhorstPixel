@@ -3,7 +3,6 @@
   top: 15%;
   left: -100%;
   transition: var(--timefast);
-  font-size: 1.25rem;
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
 }
 #popup p {
   padding: 15px 25px 0;
-  color: var(--white50);
 }
 #popup span {
   width: 100%;

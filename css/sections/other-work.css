@@ -2,7 +2,6 @@
   margin-top: 190px;
 }
 #other_work h2 {
-  color: var(--white);
   text-align: center;
 }
 #other_work > ul {
@@ -29,22 +28,14 @@
   display: flex;
 }
 .other_work_link a {
-  color: var(--white);
   transition: var(--timefast);
-}
-.other_work_link a:hover {
-  color: var(--purple);
 }
 #other_work > ul > li h3 {
   margin: 35px 0 10px 0;
-  color: var(--white);
 }
-#other_work > ul > li p {
-  color: var(--white50);
-}
+
 .other_work_language ul {
   gap: 15px;
-  color: var(--white70);
   margin-top: 60px;
   display: flex;
 }

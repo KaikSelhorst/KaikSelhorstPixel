@@ -25,14 +25,10 @@
 }
 
 .navigation ul a {
-  color: var(--white);
   text-decoration: none;
   transition: var(--timefast);
-  position: relative;
 }
-.navigation ul a:hover {
-  color: var(--purple);
-}
+
 .navigation > .btn-mobile {
   display: none;
 }
@@ -41,7 +37,6 @@
   margin-left: 30px;
   font-size: 6rem;
   line-height: 6rem;
-  color: var(--purple);
   transform: rotate(45deg);
   text-shadow: var(--shadow);
 }

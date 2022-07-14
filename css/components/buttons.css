@@ -1,0 +1,14 @@
+.botao {
+  border: 1px solid var(--purple);
+  display: inline-block;
+  line-height: 1.25rem;
+  text-decoration: none;
+  color: var(--purple);
+  padding: 15px 28px;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  transition: var(--timefast);
+}
+.botao:hover {
+  background: var(--purple10);
+}

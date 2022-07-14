@@ -8,23 +8,17 @@
   background-image: url("../assets/heart.svg");
 }
 
-.introduction_text > p {
-  color: var(--white50);
-}
 .introduction_text > p:nth-of-type(2) {
   display: inline;
   background-position: right;
   background-repeat: no-repeat;
   background-image: url("../assets/details.svg");
 }
-.introduction_text h1 {
-  color: var(--white);
-}
+
 .introduction_scroll {
   display: flex;
   margin-top: 55px;
   align-items: center;
-  color: var(--purple);
   gap: 2px;
 }
 .introduction_scroll p {
