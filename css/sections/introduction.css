@@ -5,14 +5,14 @@
   margin-top: 110px;
   background-repeat: no-repeat;
   background-position: left 25% top -10px;
-  background-image: url("../assets/heart.svg");
+  background-image: url("../../assets/heart.svg");
 }
 
 .introduction_text > p:nth-of-type(2) {
   display: inline;
   background-position: right;
   background-repeat: no-repeat;
-  background-image: url("../assets/details.svg");
+  background-image: url("../../assets/details.svg");
 }
 
 .introduction_scroll {
