@@ -1,4 +1,4 @@
-import { smoothScrollTo } from "./SmoothEffect.js";
+import smoothScrollTo from "./SmoothEffect.js";
 
 export class SmoothScroll {
   constructor(menuItems) {
@@ -31,11 +31,17 @@ export class activeSmoothScrollEfect {
   activeNavScroll() {
     window.addEventListener("scroll", this.handleScroll);
   }
+
   addIndicator() {
     let indicator = document.querySelector(".section_indicator");
     indicator.innerHTML = this.section
-      .map((item) => `<a href="#${item.id}"></a>`)
-      .join("");
+      .map((item) => {
+        const itemId = item.id;
+        const itemClean = itemId.replace("_", " ");
+
+        return `<a href="#${itemId}" data-tooltip aria-label='Go to section ${itemClean}'></a>`;
+      })
+      .join(" ");
   }
   eventAddInItemsIndicator() {
     let indicatorItems = document.querySelectorAll(".section_indicator a");
