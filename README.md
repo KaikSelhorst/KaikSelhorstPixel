@@ -4,6 +4,21 @@
 <h1 align='center'>
   kaik selhorst - portfolio
 </h1>
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/KaikSelhorst/KaikSelhorstPixel" />
+  
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KaikSelhorst/KaikSelhorstPixel" />
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KaikSelhorst/KaikSelhorstPixel" />
+
+  <a href="https://github.com/KaikSelhorst/KaikSelhorstPixel/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KaikSelhorst/KaikSelhorstPixel" />
+  </a>
+  
+  <a href="https://github.com/KaikSelhorst/KaikSelhorstPixel/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/KaikSelhorst/KaikSelhorstPixel" />
+  </a>
+</p>
 <p align='center'>
   My <a href='https://kaikselhorst.vercel.app/'>portfolio</a> developed in Html, CSS, VanillaJs and Hosted at <a href='https://vercel.com/'>Vercel</a>
 </p>
