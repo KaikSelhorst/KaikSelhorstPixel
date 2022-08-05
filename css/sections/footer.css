@@ -1,5 +1,6 @@
-.footer {
+.footer a {
   margin: 200px 0 40px 0;
+  text-decoration: none;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,7 +10,7 @@
   display: flex;
   gap: 20px;
 }
-.github_status > span {
+.github_status span {
   display: flex;
   gap: 5px;
   align-items: center;

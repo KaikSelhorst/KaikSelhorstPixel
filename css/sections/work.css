@@ -55,7 +55,7 @@
   display: block;
   transition: var(--timefast);
 }
-.work_item_links svg {
+.work_item_links img {
   width: 20px;
   height: 20px;
 }
