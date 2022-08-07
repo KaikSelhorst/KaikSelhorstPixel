@@ -1,0 +1,30 @@
+[
+  {
+    "name": "House-Developer",
+    "about": "Example of an Architecture Company Website.",
+    "languages": ["Html", "Css", "Figma"],
+    "github": "https://github.com/KaikSelhorst/House-Developer",
+    "live": "https://kaikselhorst.github.io/House-Developer/"
+  },
+  {
+    "name": "SearchBot",
+    "about": "Created To Host SearchBot, a Bot for discord.",
+    "languages": ["Html", "Css", "Figma", "JavaScript"],
+    "github": "https://github.com/KaikSelhorst/WebSite-for-SearchBot",
+    "live": "https://kaikselhorst.github.io/WebSite-for-SearchBot/"
+  },
+  {
+    "name": "WebDeveloperTools",
+    "about": "Guide to Web Developer Tools.",
+    "languages": ["Html", "Css", "Figma", "JavaScript"],
+    "github": "https://github.com/KaikSelhorst/WebDeveloperTools",
+    "live": "https://web-developer-tools-4xmwxy5rb-kaikselhorst.vercel.app/"
+  },
+  {
+    "name": "LoginPage",
+    "about": "Login page, DailyUI challenge.",
+    "languages": ["Html", "Css", "Figma"],
+    "github": "https://github.com/KaikSelhorst/DailyUI-loginPage",
+    "live": "https://loginpage-dailyui-f7md8ob2g-kaikselhorst.vercel.app/"
+  }
+]

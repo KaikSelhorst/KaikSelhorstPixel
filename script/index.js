@@ -10,3 +10,7 @@ new GitStatus("#git_stars", "#git_fork", "KaikSelhorstPixel");
 new SmoothScroll('a[href^="#"]');
 new activeSmoothScrollEfect(".content > section");
 new initTooltip("[data-tooltip]");
+
+// Functions
+import initFetchOtherWorks from "./fetchOtherWorks.js";
+initFetchOtherWorks();
