@@ -25,7 +25,7 @@
 
 <p align='center'>
   <a href='https://kaik-selhorst-pixel.vercel.app/'>
-    <img src='https://cdn.discordapp.com/attachments/978011351312134207/978012066361274438/unknown.png'>
+    <img src='https://cdn.discordapp.com/attachments/1005929260109791262/1005929614310396025/Desk_Dark.jpg'>
   </a>
 </p>
 
