@@ -25,7 +25,7 @@
 
 <p align='center'>
   <a href='https://kaik-selhorst-pixel.vercel.app/'>
-    <img src='https://cdn.discordapp.com/attachments/978011351312134207/978012066361274438/unknown.png'>
+    <img src='https://cdn.discordapp.com/attachments/1005929260109791262/1005929614310396025/Desk_Dark.jpg'>
   </a>
 </p>
 
@@ -45,10 +45,10 @@ Yes, you can fork this repository. Please thank you for reading this and also th
 
 | Color        | Hex                                                                                                                                    |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| White        | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF`                                                                     |
-| White Middle | ![#ffffffb3](https://via.placeholder.com/10/ffffffb3?text=+) `#ffffffb3`                                                               |
-| White High   | ![#ffffff80](https://via.placeholder.com/10/ffffff80?text=+) `#ffffff80`                                                               |
-| Purple       | ![#775ADA](https://via.placeholder.com/10/775ADA?text=+) `#775ADA`                                                                     |
-| Purple High  | ![#775ada1a](https://via.placeholder.com/10/775ada1a?text=+) `#775ada1a`                                                               |
-| Blue         | ![#012146cc](https://via.placeholder.com/10/012146cc?text=+) `#012146cc`                                                               |
-| Gradient     | ![#09192B](https://via.placeholder.com/10/09192B?text=+) `#09192B`, ![#012146](https://via.placeholder.com/10/012146?text=+) `#012146` |
+| White        | ![#FFFFFF](https://cdn.discordapp.com/attachments/1005929260109791262/1005935236942671882/1.jpg) `#FFFFFF`                             |
+| White Middle | ![#ffffffb3](https://cdn.discordapp.com/attachments/1005929260109791262/1005935236707799102/2.jpg) `#ffffffb3`                         |
+| White High   | ![#ffffff80](https://cdn.discordapp.com/attachments/1005929260109791262/1005935236493885490/3.jpg) `#ffffff80`                         |
+| Purple       | ![#775ADA](https://cdn.discordapp.com/attachments/1005929260109791262/1005935236221247569/4.jpg) `#775ADA`                             |
+| Purple High  | ![#775ada1a](https://cdn.discordapp.com/attachments/1005929260109791262/1005936800193327104/Rectangle_2290_1.jpg) `#775ada1a`          |
+| Blue         | ![#012146cc](https://cdn.discordapp.com/attachments/1005929260109791262/1005935235923447959/5.jpg) `#012146cc`                         |
+| Gradient     | ![#09192B](https://cdn.discordapp.com/attachments/1005929260109791262/1005935235629854850/6.jpg) `#09192B`,`#012146`                   |
