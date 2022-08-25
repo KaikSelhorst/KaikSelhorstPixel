@@ -1,16 +1,9 @@
 export default function initFetchOtherWorks() {
   const otherWorkSection = document.querySelector("#other_work ul");
-  getotherWorksList();
 
-  async function getotherWorksList() {
-    const listWorks = await fetch("../json/otherWorkApi.json");
-    const worksJSON = await listWorks.json();
-
-    worksJSON.forEach((work) => {
-      const workItem = createWorkItem(work);
-
-      otherWorkSection.appendChild(workItem);
-    });
+  function workItemLanguages(array) {
+    const itens = array.map((itemArray) => `<li>${itemArray}</li>`).join("");
+    return itens;
   }
 
   function createWorkItem(work) {
@@ -43,8 +36,15 @@ export default function initFetchOtherWorks() {
     return li;
   }
 
-  function workItemLanguages(array) {
-    const itens = array.map((itemArray) => `<li>${itemArray}</li>`).join("");
-    return itens;
+  async function getotherWorksList() {
+    const listWorks = await fetch("../json/otherWorkApi.json");
+    const worksJSON = await listWorks.json();
+
+    worksJSON.forEach((work) => {
+      const workItem = createWorkItem(work);
+
+      otherWorkSection.appendChild(workItem);
+    });
   }
+  getotherWorksList();
 }

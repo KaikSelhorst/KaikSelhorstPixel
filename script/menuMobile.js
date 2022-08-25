@@ -11,16 +11,15 @@ export default class MenuMobile {
     this.MenuItems();
     this.addEventItem();
   }
+
   addEventItem() {
     this.item.addEventListener("click", () => {
-      this.addClassMenuMobile();
+      this.menu.classList.toggle("active");
       this.AriaAccessibility();
       this.StyleInBody();
     });
   }
-  addClassMenuMobile() {
-    this.menu.classList.toggle("active");
-  }
+
   AriaAccessibility() {
     if (this.menu.classList.contains("active")) {
       this.item.ariaLabel = "Close Menu";
@@ -29,6 +28,7 @@ export default class MenuMobile {
     }
     this.item.ariaExpanded = this.menu.classList.contains("active");
   }
+
   StyleInBody() {
     if (this.menu.classList.contains("active")) {
       document.body.style.overflow = "hidden";
@@ -38,6 +38,7 @@ export default class MenuMobile {
       document.body.classList.remove("blur");
     }
   }
+
   MenuItems() {
     this.menuItems.forEach((element) => {
       element.addEventListener("click", () => {

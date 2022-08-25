@@ -4,6 +4,7 @@ import GitStatus from "./footergit.js";
 import SmoothScroll from "./SmoothScroll.js";
 import initTooltip from "./tooltip.js";
 import initSidebar from "./sidebar.js";
+import initFetchOtherWorks from "./fetchOtherWorks.js";
 
 new SwitchTheme(".btn-theme", "#popup");
 new MenuMobile(".btn-mobile", ".navigation");
@@ -12,6 +13,4 @@ new SmoothScroll('a[href^="#"]');
 new initSidebar(".content > section");
 new initTooltip("[data-tooltip]");
 
-// Functions
-import initFetchOtherWorks from "./fetchOtherWorks.js";
 initFetchOtherWorks();

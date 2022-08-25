@@ -5,6 +5,7 @@ export default class GitStatus {
     this.projectName = projectName;
     this.getStatus();
   }
+
   async getStatus() {
     const url = "https://api.github.com/users/KaikSelhorst/repos";
     const data = await fetch(url)

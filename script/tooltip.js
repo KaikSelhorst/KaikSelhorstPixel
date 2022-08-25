@@ -4,11 +4,13 @@ export default class initTooltip {
     this.onMouseOver = this.onMouseOver.bind(this);
     this.init();
   }
+
   init() {
     this.tooltips.forEach((tooltip) => {
       tooltip.addEventListener("mouseover", this.onMouseOver);
     });
   }
+
   onMouseOver(event) {
     const element = event.currentTarget;
     const tooltipBox = this.createTooltip(element);
@@ -19,8 +21,8 @@ export default class initTooltip {
         const mouseY = event.pageY;
         const mouseX = event.pageX;
 
-        tooltipBox.style.top = mouseY + 20 + "px";
-        tooltipBox.style.left = mouseX + 20 + "px";
+        tooltipBox.style.top = `${mouseY + 20}px`;
+        tooltipBox.style.left = `${mouseX + 20}px`;
       },
     };
     element.addEventListener("mousemove", onMouseMove);
