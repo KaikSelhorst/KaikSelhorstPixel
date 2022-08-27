@@ -1,4 +1,4 @@
-export default class initTooltip {
+export default class InitTooltip {
   constructor(TooltipData) {
     this.tooltips = document.querySelectorAll(TooltipData);
     this.onMouseOver = this.onMouseOver.bind(this);

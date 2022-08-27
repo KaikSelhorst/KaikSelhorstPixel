@@ -1,6 +1,6 @@
 import SmoothScroll from "./SmoothScroll.js";
 
-export default class initSidebar {
+export default class InitSidebar {
   constructor(sections) {
     this.sections = Array.from(document.querySelectorAll(sections));
     this.handleScroll = this.handleScroll.bind(this);
