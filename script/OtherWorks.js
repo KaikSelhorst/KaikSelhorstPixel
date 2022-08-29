@@ -1,6 +1,6 @@
 import icons from "./icons.js";
 
-const { gitIcon, externalLink, folder } = icons.retornarIcons();
+const { gitIcon, externalLink, folder } = icons.returnIcons();
 
 export default class initOtherWorks {
   constructor(section, url) {
@@ -11,7 +11,7 @@ export default class initOtherWorks {
 
   createElement(elementType, className = null) {
     const li = document.createElement(elementType);
-    li.classList.add(className);
+    if (!(className === null)) li.classList.add(className);
     return li;
   }
 
