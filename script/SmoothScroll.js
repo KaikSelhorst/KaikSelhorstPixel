@@ -3,10 +3,10 @@ import smoothScrollTo from "./SmoothEffect.js";
 export default class SmoothScroll {
   constructor(items) {
     this.items = document.querySelectorAll(items);
-    this.eventaddInItems();
+    this.eventAddInItems();
   }
 
-  eventaddInItems() {
+  eventAddInItems() {
     this.items.forEach((element) => {
       element.addEventListener("click", this.ScrollToIdClick);
     });
