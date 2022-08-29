@@ -7,21 +7,21 @@ export default class GitStatus {
   }
 
   async getStatus() {
-    const url = "https://api.github.com/users/KaikSelhorst/repos";
-    const data = await fetch(url)
-      .then((r) => r.json())
-      .then((d) => d)
-      .catch((e) => console.error(e));
+    try {
+      const url = "https://api.github.com/users/KaikSelhorst/repos";
+      const data = await fetch(url)
+        .then((r) => r.json())
+        .then((d) => d)
+        .catch((e) => console.error(e));
 
-    data.forEach((project) => {
-      const projectNameIs = project.name === this.projectName;
-      const projectStars = project.stargazers_count;
-      const projectForks = project.forks;
-
-      if (projectNameIs) {
-        this.star.innerHTML += projectStars;
-        this.fork.innerHTML += projectForks;
-      }
-    });
+      data.forEach(({ name, stargazers_count: stars, forks }) => {
+        if (name === this.projectName) {
+          this.star.innerHTML += stars;
+          this.fork.innerHTML += forks;
+        }
+      });
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
