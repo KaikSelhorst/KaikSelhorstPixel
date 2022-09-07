@@ -8,7 +8,15 @@ import OtherWorks from "./OtherWorks.js";
 
 new SwitchTheme(".btn-theme", "#popup");
 new MenuMobile(".btn-mobile", ".navigation");
-new GitStatus("#git_stars", "#git_fork", "KaikSelhorstPixel");
+
+const gitStatus = new GitStatus(
+  "#git_stars",
+  "#git_fork",
+  "KaikSelhorstPixel",
+  "https://api.github.com/users/KaikSelhorst/repos"
+);
+gitStatus.init();
+
 new SmoothScroll('a[href^="#"]');
 new InitSidebar(".content > section");
 new InitTooltip("[data-tooltip]");
