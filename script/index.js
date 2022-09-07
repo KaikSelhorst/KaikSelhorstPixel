@@ -18,7 +18,7 @@ const gitStatus = new GitStatus(
   "KaikSelhorstPixel",
   "https://api.github.com/users/KaikSelhorst/repos"
 );
-// gitStatus.init();
+gitStatus.init();
 
 new SmoothScroll('a[href^="#"]');
 new InitSidebar(".content > section");
