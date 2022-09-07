@@ -1,18 +1,16 @@
 export default class GitStatus {
-  constructor(star, fork, projectName) {
+  constructor(star, fork, projectName, url) {
     this.star = document.querySelector(star);
     this.fork = document.querySelector(fork);
+    this.url = url;
     this.projectName = projectName;
-    this.getStatus();
   }
 
   async getStatus() {
     try {
-      const url = "https://api.github.com/users/KaikSelhorst/repos";
-      const data = await fetch(url)
+      const data = await fetch(this.url)
         .then((r) => r.json())
-        .then((d) => d)
-        .catch((e) => console.error(e));
+        .then((d) => d);
 
       data.forEach(({ name, stargazers_count: stars, forks }) => {
         if (name === this.projectName) {
@@ -23,5 +21,10 @@ export default class GitStatus {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  init() {
+    if (this.fork && this.star && this.projectName) this.getStatus();
+    return this;
   }
 }
