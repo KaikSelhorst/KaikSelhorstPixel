@@ -1,4 +1,4 @@
-import SwitchTheme from "./switchTheme.js";
+import Theme from "./theme.js";
 import MenuMobile from "./menuMobile.js";
 import GitStatus from "./footergit.js";
 import SmoothScroll from "./SmoothScroll.js";
@@ -6,7 +6,10 @@ import InitTooltip from "./tooltip.js";
 import InitSidebar from "./sidebar.js";
 import OtherWorks from "./OtherWorks.js";
 
-new SwitchTheme(".btn-theme", "#popup");
+const theme = new Theme(".btn-theme", "#popup", "body", "white");
+
+theme.init();
+
 new MenuMobile(".btn-mobile", ".navigation");
 
 const gitStatus = new GitStatus(
@@ -15,7 +18,7 @@ const gitStatus = new GitStatus(
   "KaikSelhorstPixel",
   "https://api.github.com/users/KaikSelhorst/repos"
 );
-gitStatus.init();
+// gitStatus.init();
 
 new SmoothScroll('a[href^="#"]');
 new InitSidebar(".content > section");
