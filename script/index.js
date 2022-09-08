@@ -2,7 +2,7 @@ import Theme from "./theme.js";
 import MenuMobile from "./menuMobile.js";
 import GitStatus from "./footergit.js";
 import SmoothScroll from "./SmoothScroll.js";
-import InitTooltip from "./tooltip.js";
+import Tooltip from "./tooltip.js";
 import InitSidebar from "./sidebar.js";
 import OtherWorks from "./OtherWorks.js";
 
@@ -29,5 +29,8 @@ gitStatus.init();
 
 new SmoothScroll('a[href^="#"]');
 new InitSidebar(".content > section");
-new InitTooltip("[data-tooltip]");
+
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 new OtherWorks("#other_work ul", "../json/otherWorkApi.json");
