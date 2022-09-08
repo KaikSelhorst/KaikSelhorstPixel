@@ -1,51 +1,51 @@
 export default class MenuMobile {
-  constructor(item, menu) {
+  constructor(item, menu, classMenu, itemsMenu, mxWidth) {
     this.item = document.querySelector(item);
     this.menu = document.querySelector(menu);
-    this.menuItems = this.menu.querySelectorAll("a");
+    this.menuItems = document.querySelectorAll(itemsMenu);
+    this.classMenu = classMenu;
+    this.windowMedia = matchMedia(`(max-width:${mxWidth}px)`).matches;
 
-    // BIND
-    this.MenuItems = this.MenuItems.bind(this);
-    this.addEventItem = this.addEventItem.bind(this);
-
-    this.MenuItems();
-    this.addEventItem();
+    this.checkMenu = this.checkMenu.bind(this);
   }
 
   addEventItem() {
-    this.item.addEventListener("click", () => {
-      this.menu.classList.toggle("active");
-      this.AriaAccessibility();
-      this.StyleInBody();
-    });
+    this.item.addEventListener("click", this.checkMenu);
   }
 
-  AriaAccessibility() {
-    if (this.menu.classList.contains("active")) {
-      this.item.ariaLabel = "Close Menu";
+  checkMenu() {
+    if (this.menu.classList.contains(this.classMenu)) {
+      this.menu.classList.remove(this.classMenu);
     } else {
-      this.item.ariaLabel = "Open Menu";
+      this.menu.classList.add(this.classMenu);
     }
-    this.item.ariaExpanded = this.menu.classList.contains("active");
+    this.ariaExpanded();
+    this.StyleInBody();
+  }
+
+  ariaExpanded() {
+    this.item.ariaExpanded = this.menu.classList.contains(this.classMenu);
   }
 
   StyleInBody() {
-    if (this.menu.classList.contains("active")) {
-      document.body.style.overflow = "hidden";
+    if (this.menu.classList.contains(this.classMenu))
       document.body.classList.add("blur");
-    } else {
-      document.body.style.removeProperty("overflow");
-      document.body.classList.remove("blur");
-    }
+    else document.body.classList.remove("blur");
   }
 
   MenuItems() {
-    this.menuItems.forEach((element) => {
-      element.addEventListener("click", () => {
-        this.menu.classList.remove("active");
-        this.AriaAccessibility();
-        this.StyleInBody();
-      });
+    this.menuItems.forEach((item) => {
+      item.addEventListener("click", this.checkMenu);
     });
+  }
+
+  init() {
+    if (this.windowMedia) {
+      if (this.item && this.MenuItems && this.menu) {
+        this.MenuItems();
+        this.addEventItem();
+      }
+    }
+    return this;
   }
 }

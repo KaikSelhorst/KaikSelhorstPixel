@@ -1,6 +1,9 @@
 body {
   background: linear-gradient(243.03deg, #09192b 0.89%, #012146 101.1%);
 }
+body.blur {
+  overflow: hidden;
+}
 
 body.blur .content {
   filter: blur(18px) brightness(0.7);

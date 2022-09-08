@@ -10,7 +10,14 @@ const theme = new Theme(".btn-theme", "#popup", "body", "white");
 
 theme.init();
 
-new MenuMobile(".btn-mobile", ".navigation");
+const menuMobile = new MenuMobile(
+  ".btn-mobile",
+  ".navigation",
+  "active",
+  "#menu a",
+  "700"
+);
+menuMobile.init();
 
 const gitStatus = new GitStatus(
   "#git_stars",
