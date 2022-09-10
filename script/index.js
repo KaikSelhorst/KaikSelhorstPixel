@@ -3,11 +3,10 @@ import MenuMobile from "./menuMobile.js";
 import GitStatus from "./footergit.js";
 import SmoothScroll from "./SmoothScroll.js";
 import Tooltip from "./tooltip.js";
-import InitSidebar from "./sidebar.js";
+import Sidebar from "./sidebar.js";
 import OtherWorks from "./OtherWorks.js";
 
 const theme = new Theme(".btn-theme", "#popup", "body", "white");
-
 theme.init();
 
 const menuMobile = new MenuMobile(
@@ -27,8 +26,15 @@ const gitStatus = new GitStatus(
 );
 gitStatus.init();
 
-new SmoothScroll('a[href^="#"]');
-new InitSidebar(".content > section");
+const smoothScroll = new SmoothScroll('a[href^="#"]');
+smoothScroll.init();
+
+const sideBar = new Sidebar(
+  ".content > section",
+  ".section_indicator",
+  "activeSection"
+);
+sideBar.init();
 
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
