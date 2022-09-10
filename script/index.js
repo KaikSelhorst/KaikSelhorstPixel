@@ -39,4 +39,9 @@ sideBar.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-new OtherWorks("#other_work ul", "../json/otherWorkApi.json");
+const otherWorks = new OtherWorks(
+  "#other_work ul",
+  "../json/otherWorkApi.json",
+  "li"
+);
+otherWorks.init();

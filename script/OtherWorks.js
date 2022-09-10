@@ -3,10 +3,10 @@ import icons from "./icons.js";
 const { gitIcon, externalLink, folder } = icons.returnIcons();
 
 export default class initOtherWorks {
-  constructor(section, url) {
+  constructor(section, url, itemBoxTag) {
     this.section = document.querySelector(section);
+    this.itemBoxTag = itemBoxTag;
     this.url = url;
-    this.init();
   }
 
   createElement(elementType, className = null) {
@@ -20,7 +20,7 @@ export default class initOtherWorks {
   }
 
   createItem({ github, live, name, about, languages }) {
-    const itemBox = this.createElement("li");
+    const itemBox = this.createElement(this.itemBoxTag);
     itemBox.innerHTML = `
     <div class="other_work_top">
       ${folder}
