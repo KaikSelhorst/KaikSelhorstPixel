@@ -1,46 +1,56 @@
 import SmoothScroll from "./SmoothScroll.js";
 
-export default class InitSidebar {
-  constructor(sections) {
-    this.sections = Array.from(document.querySelectorAll(sections));
-    this.handleScroll = this.handleScroll.bind(this);
-    window.addEventListener("scroll", this.handleScroll);
-    this.addIndicatorToSection();
+export default class Sidebar {
+  constructor(sections, containerIndicator, sectionClass) {
+    this.sectionClass = sectionClass;
+    this.containerIndicator = document.querySelector(containerIndicator);
+    this.sections = [...document.querySelectorAll(sections)];
+
+    window.addEventListener("scroll", () => this.handleScroll());
+
+    // Bind
+    this.checkOffsetTop = this.checkOffsetTop.bind(this);
   }
 
-  addIndicatorToSection() {
-    const indicatorSection = document.querySelector(".section_indicator");
-    const indicators = this.createIndicatorBox();
-    indicators.forEach((item) => indicatorSection.appendChild(item));
-    this.indicatorsElements = ".section_indicator a";
-    new SmoothScroll(this.indicatorsElements);
+  createSideNav() {
+    this.indicatorItems = this.sections.map(this.createItemIndicator);
+
+    this.indicatorItems.forEach((item) =>
+      this.containerIndicator.appendChild(item)
+    );
+
+    const smoothScroll = new SmoothScroll(".section_indicator a");
+    smoothScroll.init();
+
     this.handleScroll();
   }
 
-  createIndicatorBox() {
-    const indicators = this.sections.map(({ id }) => {
-      const item = document.createElement("a");
-      const itemId = `#${id}`;
-      const itemClean = id.replace("_", " ");
-      item.href = itemId;
-      item.dataset.tooltip = "";
-      item.setAttribute("aria-label", `Go to section ${itemClean}`);
-      return item;
-    });
-    return indicators;
+  createItemIndicator({ id }) {
+    const item = document.createElement("a");
+    const itemId = `#${id}`;
+    const itemClean = id.replace("_", " ");
+    item.href = itemId;
+    item.dataset.tooltip = "";
+    item.setAttribute("aria-label", `Go to section ${itemClean}`);
+    return item;
+  }
+
+  checkOffsetTop(itemSection, i) {
+    if (window.pageYOffset > itemSection.offsetTop - window.innerHeight * 0.5) {
+      this.indicatorItems[i].classList.add(this.sectionClass);
+    } else {
+      this.indicatorItems[i].classList.remove(this.sectionClass);
+    }
   }
 
   handleScroll() {
-    const indicatorItems = document.querySelectorAll(this.indicatorsElements);
-    this.sections.forEach((itemSection, i) => {
-      if (
-        window.pageYOffset >
-        itemSection.offsetTop - window.innerHeight * 0.5
-      ) {
-        indicatorItems[i].classList.add("activeSection");
-      } else {
-        indicatorItems[i].classList.remove("activeSection");
-      }
-    });
+    this.sections.forEach(this.checkOffsetTop);
+  }
+
+  init() {
+    if (this.sections.length) {
+      this.createSideNav();
+    }
+    return this;
   }
 }
